@@ -1,0 +1,33 @@
+# Nextflow runtime and logs
+
+.work/
+
+
+# Local data, results, and outputs (huge / reproducible)
+data/
+results/
+modules/output/
+
+# Apptainer / Singularity containers
+*.sif
+*.simg
+
+# Conda environment build artifacts
+.conda/
+*.tar.gz
+*.bz2
+
+# R-related outputs
+*.Rout
+*.RData
+*.Rproj.user/
+
+# VSCode + OS metadata
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python or shell temp files (if any)
+__pycache__/
+*.pyc
+*.tmp
