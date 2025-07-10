@@ -1,0 +1,16 @@
+# envs/r_plotting.yml
+name: r-plotting
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - r-base=4.3.0
+  - r-ggplot2
+  - r-dplyr
+  - r-readr
+  - r-tidyr
+  - r-tidyverse
+  - r-patchwork
+  - r-lmerTest
+  - r-rmisc

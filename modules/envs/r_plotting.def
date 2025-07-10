@@ -1,0 +1,31 @@
+Bootstrap: docker
+From: mambaorg/micromamba:1.5.6
+
+%post
+    cat <<EOF > /tmp/env.yml
+name: r-plotting
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - r-base=4.3.0
+  - r-ggplot2
+  - r-dplyr
+  - r-readr
+  - r-tidyr
+  - r-tidyverse
+  - r-patchwork
+  - r-lmerTest
+  - r-rmisc
+EOF
+
+    micromamba create -y -n r-plotting -f /tmp/env.yml
+    micromamba clean --all --yes
+
+%environment
+    export PATH="/opt/conda/envs/r-plotting/bin:$PATH"
+
+%runscript
+    exec Rscript "$@"
+
