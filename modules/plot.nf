@@ -11,6 +11,10 @@ process GenerateFigures {
     //container 'docker://rocker/r-base:4.3.2'
     //container '/scratch/gent/491/vsc49179/nextflow-project/modules/envs/r-plotting.sif'
     conda "envs/r_plotting.yml" 
+    //container "/scratch/gent/491/vsc49179/nextflow-project/modules/r-base.3.4.4.simg"
+    //container "/scratch/gent/491/vsc49179/nextflow-project/modules/rocker_r-base.sif"
+    //container "/scratch/gent/491/vsc49179/nextflow-project/modules/tidyverse-devel.sif"
+    //container "/scratch/gent/491/vsc49179/nextflow-project/modules/envs/r-pipeline.sif"
 
 
     publishDir "${params.plot_dir}", mode: 'copy'
@@ -27,6 +31,11 @@ process GenerateFigures {
     """
     Rscript ${r_script}
     """
+    /*
+    """
+    apptainer run --app Rscript ${task.container} ${r_script} 
+    """
+    */
 }
 
 /*

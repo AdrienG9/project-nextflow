@@ -1,0 +1,3 @@
+SINGULARITY_APPNAME: readonly variable
+Error in library("tidyverse") : there is no package called ‘tidyverse’
+Execution halted

@@ -1,0 +1,851 @@
+Jul-11 19:05:01.011 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-11 19:05:01.108 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.2
+Jul-11 19:05:01.128 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/user/gent/491/vsc49179/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.4
+Jul-11 19:05:01.156 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-11 19:05:01.157 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-11 19:05:01.160 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-11 19:05:01.172 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-11 19:05:01.246 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-11 19:05:01.264 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [spontaneous_lamport] DSL2 - revision: 9786916850
+Jul-11 19:05:01.265 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-11 19:05:01.266 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-11 19:05:01.325 [main] DEBUG nextflow.Session - Session UUID: 01a5628b-8210-4113-9c8d-38876d49c0ac
+Jul-11 19:05:01.325 [main] DEBUG nextflow.Session - Run name: spontaneous_lamport
+Jul-11 19:05:01.325 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-11 19:05:01.335 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-11 19:05:01.343 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 19:05:01.366 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.2 build 5932
+  Created: 27-11-2024 21:23 UTC (22:23 CEST)
+  System: Linux 5.14.0-427.66.1.el9_4.x86_64
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 3128691@node4004.donphan.os [10.141.6.133]
+  CPUs: 8 - Mem: 754 GB (703.3 GB) - Swap: 20 GB (20 GB)
+Jul-11 19:05:01.389 [main] DEBUG nextflow.Session - Work-dir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work [gpfs]
+Jul-11 19:05:01.389 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/bin
+Jul-11 19:05:01.404 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-11 19:05:01.414 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-11 19:05:01.444 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-11 19:05:01.453 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-11 19:05:01.521 [main] DEBUG nextflow.Session - Session start
+Jul-11 19:05:02.154 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-11 19:05:02.167 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /user/gent/491/vsc49179/.nextflow/secrets/store.json
+Jul-11 19:05:02.175 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@337a6d30] - activable => nextflow.secret.LocalSecretsProvider@337a6d30
+Jul-11 19:05:02.655 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.655 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.662 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-11 19:05:02.669 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=754 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-11 19:05:02.672 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-11 19:05:02.781 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.781 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.793 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.793 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.808 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.809 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.829 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.830 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.838 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 19:05:02.838 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 19:05:02.843 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SplitCsvPure, RecombineCsv, EXTRACT_ARCHIVE, VERIFY_EXTRACTION, Extract_columns, GenerateFigures
+Jul-11 19:05:02.844 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Jul-11 19:05:02.850 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_ARCHIVE
+Jul-11 19:05:02.850 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VERIFY_EXTRACTION
+Jul-11 19:05:02.851 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Extract_columns
+Jul-11 19:05:02.851 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GenerateFigures
+Jul-11 19:05:02.852 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SplitCsvPure
+Jul-11 19:05:02.852 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RecombineCsv
+Jul-11 19:05:02.853 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_7888e7d0ea08ca59: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./untar.nf
+  Script_70795d1af80416c4: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./combine.nf
+  Script_b37df107a74f2e08: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/main.nf
+  Script_f62eede1898f0bbf: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./split.nf
+  Script_24a879d7c285f7ca: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./columns.nf
+  Script_aaf8b4403bde2fa8: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./plot.nf
+Jul-11 19:05:02.853 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-11 19:05:02.853 [main] DEBUG nextflow.Session - Session await
+Jul-11 19:05:03.011 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.013 [Task submitter] INFO  nextflow.Session - [24/1a55a0] Submitted process > EXTRACT_ARCHIVE (1)
+Jul-11 19:05:03.040 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: EXTRACT_ARCHIVE (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/24/1a55a09109d42d508a41f0f3bd7898]
+Jul-11 19:05:03.040 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 19:05:03.085 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 19:05:03.099 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.100 [Task submitter] INFO  nextflow.Session - [76/74a91a] Submitted process > Extract_columns
+Jul-11 19:05:03.107 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.108 [Task submitter] INFO  nextflow.Session - [60/f6b1b6] Submitted process > VERIFY_EXTRACTION (1)
+Jul-11 19:05:03.114 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.114 [Task submitter] INFO  nextflow.Session - [c1/5f7939] Submitted process > GenerateFigures (1)
+Jul-11 19:05:03.137 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: Extract_columns; status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/76/74a91a2aaa28608e32f07f8ddbc0cd]
+Jul-11 19:05:03.174 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: VERIFY_EXTRACTION (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/60/f6b1b6f2fc4bac419e9be575c14a00]
+Jul-11 19:05:03.362 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.363 [Task submitter] INFO  nextflow.Session - [ff/847f9a] Submitted process > SplitCsvPure (exp_index_3)
+Jul-11 19:05:03.400 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.401 [Task submitter] INFO  nextflow.Session - [95/4127ef] Submitted process > SplitCsvPure (exp_index_1b)
+Jul-11 19:05:03.413 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.414 [Task submitter] INFO  nextflow.Session - [f3/f3c574] Submitted process > SplitCsvPure (exp_index_2a)
+Jul-11 19:05:03.427 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.428 [Task submitter] INFO  nextflow.Session - [21/c7bb0e] Submitted process > SplitCsvPure (exp_index_2b)
+Jul-11 19:05:03.446 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:03.446 [Task submitter] INFO  nextflow.Session - [c2/f3e4d1] Submitted process > SplitCsvPure (exp_index_1a)
+Jul-11 19:05:04.269 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SplitCsvPure (exp_index_3); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/ff/847f9aa6a2270957081dd3e81221ec]
+Jul-11 19:05:05.781 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SplitCsvPure (exp_index_2b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/21/c7bb0e33b8738b38ed03705bd14135]
+Jul-11 19:05:05.845 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SplitCsvPure (exp_index_1b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/95/4127ef0c26c4b4e88bfe5a46f9b4a4]
+Jul-11 19:05:06.933 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SplitCsvPure (exp_index_1a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/c2/f3e4d15cdf1b2310cecc304501bb6e]
+Jul-11 19:05:06.969 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SplitCsvPure (exp_index_2a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/f3/f3c5745f757fa10a7633b773533eff]
+Jul-11 19:05:07.001 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 19:05:07.001 [Task submitter] INFO  nextflow.Session - [29/24bcdc] Submitted process > RecombineCsv (recombine)
+Jul-11 19:05:07.235 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: RecombineCsv (recombine); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/29/24bcdc40678daee65538078f37e7a5]
+Jul-11 19:07:43.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: GenerateFigures (1); status: COMPLETED; exit: 1; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/c1/5f7939d3a2afbc6c04f98e9e80642f]
+Jul-11 19:07:43.929 [TaskFinalizer-10] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=GenerateFigures (1); work-dir=/kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/c1/5f7939d3a2afbc6c04f98e9e80642f
+  error [nextflow.exception.ProcessFailedException]: Process `GenerateFigures (1)` terminated with an error exit status (1)
+Jul-11 19:07:43.946 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'GenerateFigures (1)'
+
+Caused by:
+  Process `GenerateFigures (1)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  apptainer run --app Rscript docker://rocker/r-base:4.3.2 plot_figures.R
+
+Command exit status:
+  1
+
+Command output:
+  Could not locate the container application: Rscript
+
+Command error:
+  INFO:    Converting OCI blobs to SIF format
+  WARNING: 'nodev' mount option set on /kyukon/scratch, it could be a source of failure during build process
+  INFO:    Starting build...
+  INFO:    Fetching OCI image...
+  INFO:    Extracting OCI image...
+  INFO:    Inserting Apptainer configuration...
+  INFO:    Creating SIF file...
+  Could not locate the container application: Rscript
+
+Work dir:
+  /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/c1/5f7939d3a2afbc6c04f98e9e80642f
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jul-11 19:07:43.948 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-11 19:07:43.949 [TaskFinalizer-10] DEBUG nextflow.Session - Session aborted -- Cause: Process `GenerateFigures (1)` terminated with an error exit status (1)
+Jul-11 19:07:43.965 [TaskFinalizer-10] DEBUG nextflow.Session - 
+Thread[#76,PublishDir-8,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#81,TaskFinalizer-10,5,main]
+  java.base@21.0.7/java.lang.Thread.dumpThreads(Native Method)
+  java.base@21.0.7/java.lang.Thread.getAllStackTraces(Thread.java:2522)
+  app//nextflow.util.SysHelper.dumpThreads(SysHelper.groovy:188)
+  app//nextflow.Session.abort(Session.groovy:800)
+  app//nextflow.Session.fault(Session.groovy:766)
+  app//nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:695)
+  app//nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:678)
+  java.base@21.0.7/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$MH/0x0000152e141a3c00.invoke(LambdaForm$MH)
+  java.base@21.0.7/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+  app//nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:668)
+  app//nextflow.processor.TaskPollingMonitor$$Lambda/0x0000152e144385d0.run(Unknown Source)
+  java.base@21.0.7/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+  java.base@21.0.7/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#34,Task submitter,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  app//nextflow.processor.TaskPollingMonitor.awaitTasks(TaskPollingMonitor.groovy:388)
+  app//nextflow.processor.TaskPollingMonitor.submitLoop(TaskPollingMonitor.groovy:412)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$DMH/0x0000152e141a8800.invokeVirtual(LambdaForm$DMH)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$MH/0x0000152e14214000.invoke(LambdaForm$MH)
+  java.base@21.0.7/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#18,Common-Cleaner,8,InnocuousThreadGroup]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+  java.base@21.0.7/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+  java.base@21.0.7/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+  java.base@21.0.7/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+  java.base@21.0.7/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+  java.base@21.0.7/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+Thread[#50,PublishDir-1,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#41,Actor Thread 7,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#61,PublishDir-4,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#10,Finalizer,8,system]
+  java.base@21.0.7/java.lang.Object.wait0(Native Method)
+  java.base@21.0.7/java.lang.Object.wait(Object.java:366)
+  java.base@21.0.7/java.lang.Object.wait(Object.java:339)
+  java.base@21.0.7/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+  java.base@21.0.7/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+  java.base@21.0.7/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+  java.base@21.0.7/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+Thread[#51,PublishDir-2,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#60,TaskFinalizer-3,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#80,PublishDir-10,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#39,Actor Thread 5,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#64,pool-2-thread-7,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#79,TaskFinalizer-9,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#37,Actor Thread 3,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#66,pool-2-thread-8,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#30,Thread-1,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingDeque.pollFirst(LinkedBlockingDeque.java:515)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingDeque.poll(LinkedBlockingDeque.java:677)
+  app//nextflow.util.SimpleAgent.run(SimpleAgent.groovy:89)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$DMH/0x0000152e141a8800.invokeVirtual(LambdaForm$DMH)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$MH/0x0000152e14214000.invoke(LambdaForm$MH)
+  java.base@21.0.7/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#9,Reference Handler,10,system]
+  java.base@21.0.7/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+  java.base@21.0.7/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+  java.base@21.0.7/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+Thread[#75,TaskFinalizer-7,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#36,Actor Thread 2,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#69,TaskFinalizer-4,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#57,process reaper,10,InnocuousThreadGroup]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:410)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+  java.base@21.0.7/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+Thread[#73,TaskFinalizer-6,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#33,Task monitor,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1852)
+  app//nextflow.processor.TaskPollingMonitor$_await_closure5.doCall(TaskPollingMonitor.groovy:529)
+  app//nextflow.processor.TaskPollingMonitor$_await_closure5.call(TaskPollingMonitor.groovy)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy:337)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy)
+  app//nextflow.processor.TaskPollingMonitor.await(TaskPollingMonitor.groovy:528)
+  app//nextflow.processor.TaskPollingMonitor.pollLoop(TaskPollingMonitor.groovy:453)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$DMH/0x0000152e141a8800.invokeVirtual(LambdaForm$DMH)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$MH/0x0000152e14214000.invoke(LambdaForm$MH)
+  java.base@21.0.7/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+  app//org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+  app//nextflow.processor.TaskPollingMonitor$_start_closure2.doCall(TaskPollingMonitor.groovy:318)
+  app//nextflow.processor.TaskPollingMonitor$_start_closure2.call(TaskPollingMonitor.groovy)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#59,PublishDir-3,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#63,pool-2-thread-6,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#38,Actor Thread 4,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#58,TaskFinalizer-2,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#72,PublishDir-6,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#71,TaskFinalizer-5,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#1,main,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  app//nextflow.util.Barrier$_awaitCompletion_closure3.doCall(Barrier.groovy:92)
+  app//nextflow.util.Barrier$_awaitCompletion_closure3.call(Barrier.groovy)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy:337)
+  app//nextflow.extension.Bolts.withLock(Bolts.groovy)
+  app//nextflow.util.Barrier.awaitCompletion(Barrier.groovy:89)
+  app//nextflow.Session.await(Session.groovy:679)
+  app//nextflow.script.ScriptRunner.await(ScriptRunner.groovy:256)
+  app//nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:144)
+  app//nextflow.cli.CmdRun.run(CmdRun.groovy:376)
+  app//nextflow.cli.Launcher.run(Launcher.groovy:503)
+  app//nextflow.cli.Launcher.main(Launcher.groovy:658)
+
+Thread[#44,Actor Thread 9,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#35,Actor Thread 1,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#70,PublishDir-5,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#54,pool-2-thread-3,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#62,pool-2-thread-5,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#78,PublishDir-9,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#49,TaskFinalizer-1,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#11,Signal Dispatcher,9,system]
+
+Thread[#31,AnsiLogObserver,5,main]
+  java.base@21.0.7/java.lang.ProcessImpl.forkAndExec(Native Method)
+  java.base@21.0.7/java.lang.ProcessImpl.<init>(ProcessImpl.java:295)
+  java.base@21.0.7/java.lang.ProcessImpl.start(ProcessImpl.java:225)
+  java.base@21.0.7/java.lang.ProcessBuilder.start(ProcessBuilder.java:1126)
+  java.base@21.0.7/java.lang.ProcessBuilder.start(ProcessBuilder.java:1089)
+  java.base@21.0.7/java.lang.Runtime.exec(Runtime.java:681)
+  java.base@21.0.7/java.lang.Runtime.exec(Runtime.java:530)
+  app//jline.internal.TerminalLineSettings.exec(TerminalLineSettings.java:183)
+  app//jline.internal.TerminalLineSettings.exec(TerminalLineSettings.java:173)
+  app//jline.internal.TerminalLineSettings.stty(TerminalLineSettings.java:168)
+  app//jline.internal.TerminalLineSettings.get(TerminalLineSettings.java:72)
+  app//jline.internal.TerminalLineSettings.getProperty(TerminalLineSettings.java:92)
+  app//jline.UnixTerminal.getWidth(UnixTerminal.java:77)
+  app//nextflow.trace.AnsiLogObserver.renderProcesses(AnsiLogObserver.groovy:257)
+  app//nextflow.trace.AnsiLogObserver.renderProgress(AnsiLogObserver.groovy:312)
+  app//nextflow.trace.AnsiLogObserver.render0(AnsiLogObserver.groovy:183)
+  java.base@21.0.7/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+  java.base@21.0.7/java.lang.invoke.LambdaForm$MH/0x0000152e14289400.invoke(LambdaForm$MH)
+  java.base@21.0.7/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:154)
+  java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+  app//org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+  app//groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1017)
+  app//groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1207)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+  app//groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+  app//groovy.lang.Closure.call(Closure.java:433)
+  app//groovy.lang.Closure.call(Closure.java:412)
+  app//groovy.lang.Closure.run(Closure.java:505)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#53,pool-2-thread-2,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#55,pool-2-thread-4,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#74,PublishDir-7,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#48,pool-2-thread-1,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#52,Actor Thread 10,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#19,Notification Thread,9,system]
+
+Thread[#77,TaskFinalizer-8,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+  java.base@21.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+  java.base@21.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1712)
+  java.base@21.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Thread[#43,Actor Thread 8,5,main]
+  java.base@21.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+  java.base@21.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+  java.base@21.0.7/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:458)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+  java.base@21.0.7/java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:318)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+  java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+  java.base@21.0.7/java.lang.Thread.runWith(Thread.java:1596)
+  java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+
+Jul-11 19:07:43.966 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-11 19:07:43.967 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-11 19:07:43.975 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=9; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=12.7s; failedDuration=2m 41s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+Jul-11 19:07:44.187 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-11 19:07:44.199 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

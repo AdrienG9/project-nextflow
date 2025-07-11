@@ -1,31 +1,11 @@
 Bootstrap: docker
-From: mambaorg/micromamba:1.5.6
+From: rocker/tidyverse:latest
 
 %post
-    cat <<EOF > /tmp/env.yml
-name: r-plotting
-channels:
-  - conda-forge
-  - bioconda
-  - r
-dependencies:
-  - r-base=4.3.0
-  - r-ggplot2
-  - r-dplyr
-  - r-readr
-  - r-tidyr
-  - r-tidyverse
-  - r-patchwork
-  - r-lmerTest
-  - r-rmisc
-EOF
-
-    micromamba create -y -n r-plotting -f /tmp/env.yml
-    micromamba clean --all --yes
+    Rscript -e "install.packages(c('patchwork', 'Rmisc', 'lmerTest'), repos='http://cran.us.r-project.org')"
 
 %environment
-    export PATH="/opt/conda/envs/r-plotting/bin:$PATH"
+    export PATH="/usr/local/bin:$PATH"
 
 %runscript
     exec Rscript "$@"
-

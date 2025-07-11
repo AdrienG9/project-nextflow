@@ -1,107 +1,107 @@
-Jul-11 14:34:21.627 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
-Jul-11 14:34:21.716 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.2
-Jul-11 14:34:21.736 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/user/gent/491/vsc49179/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.4
-Jul-11 14:34:21.764 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-11 14:34:21.765 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-11 14:34:21.768 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jul-11 14:34:21.780 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-11 14:34:21.857 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Jul-11 14:34:21.874 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [naughty_hypatia] DSL2 - revision: 9786916850
-Jul-11 14:34:21.876 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-11 14:34:21.876 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-11 14:34:21.934 [main] DEBUG nextflow.Session - Session UUID: 263d9490-c319-4b5e-954f-47dd610eafe8
-Jul-11 14:34:21.935 [main] DEBUG nextflow.Session - Run name: naughty_hypatia
-Jul-11 14:34:21.935 [main] DEBUG nextflow.Session - Executor pool size: 8
-Jul-11 14:34:21.945 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-11 14:34:21.952 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-11 14:34:21.976 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-11 20:19:50.793 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Jul-11 20:19:50.885 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.2
+Jul-11 20:19:50.904 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/user/gent/491/vsc49179/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.4
+Jul-11 20:19:50.932 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-11 20:19:50.933 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-11 20:19:50.936 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-11 20:19:50.947 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-11 20:19:51.023 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-11 20:19:51.040 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [happy_mahavira] DSL2 - revision: 9786916850
+Jul-11 20:19:51.042 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-11 20:19:51.042 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-11 20:19:51.099 [main] DEBUG nextflow.Session - Session UUID: 5f9ddca3-98d0-4579-81ec-53b15f7d4ef8
+Jul-11 20:19:51.100 [main] DEBUG nextflow.Session - Run name: happy_mahavira
+Jul-11 20:19:51.100 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jul-11 20:19:51.110 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-11 20:19:51.117 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 20:19:51.155 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 24.10.2 build 5932
   Created: 27-11-2024 21:23 UTC (22:23 CEST)
   System: Linux 5.14.0-427.66.1.el9_4.x86_64
   Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.7+6-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 3084719@node4004.donphan.os [10.141.6.133]
-  CPUs: 8 - Mem: 754 GB (704 GB) - Swap: 20 GB (20 GB)
-Jul-11 14:34:21.999 [main] DEBUG nextflow.Session - Work-dir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work [gpfs]
-Jul-11 14:34:22.000 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/bin
-Jul-11 14:34:22.015 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-11 14:34:22.026 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-11 14:34:22.055 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-11 14:34:22.064 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
-Jul-11 14:34:22.131 [main] DEBUG nextflow.Session - Session start
-Jul-11 14:34:22.785 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-11 14:34:22.798 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /user/gent/491/vsc49179/.nextflow/secrets/store.json
-Jul-11 14:34:22.806 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5d318e91] - activable => nextflow.secret.LocalSecretsProvider@5d318e91
-Jul-11 14:34:23.241 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.241 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.248 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-11 14:34:23.256 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=754 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Jul-11 14:34:23.259 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-11 14:34:23.364 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.365 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.376 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.376 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.390 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.390 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.410 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.410 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.418 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-11 14:34:23.418 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-11 14:34:23.423 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SplitCsvPure, RecombineCsv, EXTRACT_ARCHIVE, VERIFY_EXTRACTION, Extract_columns, GenerateFigures
-Jul-11 14:34:23.424 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
-Jul-11 14:34:23.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_ARCHIVE
-Jul-11 14:34:23.430 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VERIFY_EXTRACTION
-Jul-11 14:34:23.431 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Extract_columns
-Jul-11 14:34:23.432 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GenerateFigures
-Jul-11 14:34:23.432 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SplitCsvPure
-Jul-11 14:34:23.433 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RecombineCsv
-Jul-11 14:34:23.433 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 3158035@node4004.donphan.os [10.141.6.133]
+  CPUs: 8 - Mem: 754 GB (703.1 GB) - Swap: 20 GB (20 GB)
+Jul-11 20:19:51.211 [main] DEBUG nextflow.Session - Work-dir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work [gpfs]
+Jul-11 20:19:51.211 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/bin
+Jul-11 20:19:51.226 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-11 20:19:51.237 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-11 20:19:51.267 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-11 20:19:51.276 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Jul-11 20:19:51.343 [main] DEBUG nextflow.Session - Session start
+Jul-11 20:19:52.035 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-11 20:19:52.048 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /user/gent/491/vsc49179/.nextflow/secrets/store.json
+Jul-11 20:19:52.056 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@337a6d30] - activable => nextflow.secret.LocalSecretsProvider@337a6d30
+Jul-11 20:19:52.497 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.497 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.503 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-11 20:19:52.510 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=754 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jul-11 20:19:52.513 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-11 20:19:52.614 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.614 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.625 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.625 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.639 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.639 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.658 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.658 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.666 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-11 20:19:52.666 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-11 20:19:52.671 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SplitCsvPure, RecombineCsv, EXTRACT_ARCHIVE, VERIFY_EXTRACTION, Extract_columns, GenerateFigures
+Jul-11 20:19:52.672 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Jul-11 20:19:52.678 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EXTRACT_ARCHIVE
+Jul-11 20:19:52.678 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VERIFY_EXTRACTION
+Jul-11 20:19:52.678 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Extract_columns
+Jul-11 20:19:52.680 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GenerateFigures
+Jul-11 20:19:52.680 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SplitCsvPure
+Jul-11 20:19:52.680 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > RecombineCsv
+Jul-11 20:19:52.681 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_7888e7d0ea08ca59: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./untar.nf
-  Script_b37df107a74f2e08: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/main.nf
   Script_70795d1af80416c4: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./combine.nf
-  Script_a1c7d8271ed5d05b: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./plot.nf
+  Script_b37df107a74f2e08: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/main.nf
+  Script_ce4e78a8bc90eeb1: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./plot.nf
   Script_f62eede1898f0bbf: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./split.nf
   Script_24a879d7c285f7ca: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/./columns.nf
-Jul-11 14:34:23.434 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-11 14:34:23.434 [main] DEBUG nextflow.Session - Session await
-Jul-11 14:34:23.572 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:23.574 [Task submitter] INFO  nextflow.Session - [c7/adf8aa] Submitted process > EXTRACT_ARCHIVE (1)
-Jul-11 14:34:23.599 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: EXTRACT_ARCHIVE (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/c7/adf8aad746c2a7daee2a9699af1a67]
-Jul-11 14:34:23.600 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-11 14:34:23.643 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
-Jul-11 14:34:23.658 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:23.661 [Task submitter] INFO  nextflow.Session - [48/0e50f9] Submitted process > Extract_columns
-Jul-11 14:34:23.681 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:23.682 [Task submitter] INFO  nextflow.Session - [8c/01bddd] Submitted process > GenerateFigures (1)
-Jul-11 14:34:23.687 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:23.687 [Task submitter] INFO  nextflow.Session - [f5/9226f5] Submitted process > VERIFY_EXTRACTION (1)
-Jul-11 14:34:23.708 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: Extract_columns; status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/48/0e50f9c5af56dc79f9872d9d93a903]
-Jul-11 14:34:23.733 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: VERIFY_EXTRACTION (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/f5/9226f5d3b4913bacc522e9e9b923f9]
-Jul-11 14:34:24.079 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:24.080 [Task submitter] INFO  nextflow.Session - [39/1119c4] Submitted process > SplitCsvPure (exp_index_2a)
-Jul-11 14:34:24.091 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:24.091 [Task submitter] INFO  nextflow.Session - [0f/7aef86] Submitted process > SplitCsvPure (exp_index_3)
-Jul-11 14:34:24.109 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:24.109 [Task submitter] INFO  nextflow.Session - [e7/df7ddc] Submitted process > SplitCsvPure (exp_index_1a)
-Jul-11 14:34:24.121 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:24.122 [Task submitter] INFO  nextflow.Session - [72/830c04] Submitted process > SplitCsvPure (exp_index_2b)
-Jul-11 14:34:24.135 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:24.135 [Task submitter] INFO  nextflow.Session - [73/53a1bc] Submitted process > SplitCsvPure (exp_index_1b)
-Jul-11 14:34:24.982 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SplitCsvPure (exp_index_3); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/0f/7aef86f2d5949ec22a952f5508d394]
-Jul-11 14:34:26.513 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SplitCsvPure (exp_index_2b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/72/830c047b38ef936587ad3cd09c2ed0]
-Jul-11 14:34:26.568 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SplitCsvPure (exp_index_1b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/73/53a1bc916804ff73e1cc4569783195]
-Jul-11 14:34:27.554 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SplitCsvPure (exp_index_2a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/39/1119c4eb696658c4e0aa10969e16d4]
-Jul-11 14:34:27.602 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SplitCsvPure (exp_index_1a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/e7/df7ddc04c26c071f8631bbafe9ee27]
-Jul-11 14:34:27.631 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-11 14:34:27.632 [Task submitter] INFO  nextflow.Session - [a4/b8e9f1] Submitted process > RecombineCsv (recombine)
-Jul-11 14:34:27.858 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: RecombineCsv (recombine); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/a4/b8e9f10dfd95167c2abe84827ccb3d]
-Jul-11 14:35:01.976 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: GenerateFigures (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/8c/01bdddaa205b4b43b9a3022af2bba8]
-Jul-11 14:35:01.982 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-11 14:35:02.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-11 14:35:02.077 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-11 14:35:02.080 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
-Jul-11 14:35:02.080 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
-Jul-11 14:35:02.087 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=10; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=50.8s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
-Jul-11 14:35:02.216 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-11 14:35:02.225 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
-Jul-11 14:35:02.225 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Jul-11 20:19:52.681 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-11 20:19:52.681 [main] DEBUG nextflow.Session - Session await
+Jul-11 20:19:52.822 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:52.824 [Task submitter] INFO  nextflow.Session - [51/a08d67] Submitted process > EXTRACT_ARCHIVE (1)
+Jul-11 20:19:52.851 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: EXTRACT_ARCHIVE (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/51/a08d67b3b4ce33b0b9ed055eae44ce]
+Jul-11 20:19:52.852 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 20:19:52.895 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-11 20:19:52.917 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:52.918 [Task submitter] INFO  nextflow.Session - [1a/ee0521] Submitted process > Extract_columns
+Jul-11 20:19:52.925 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:52.926 [Task submitter] INFO  nextflow.Session - [ed/2a310b] Submitted process > VERIFY_EXTRACTION (1)
+Jul-11 20:19:52.932 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:52.936 [Task submitter] INFO  nextflow.Session - [5e/69fc8b] Submitted process > GenerateFigures (1)
+Jul-11 20:19:52.941 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: Extract_columns; status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/1a/ee0521e4d2b70c550a290e9f4a3390]
+Jul-11 20:19:52.974 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: VERIFY_EXTRACTION (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/ed/2a310b6e240b07f1945a6705acf9b6]
+Jul-11 20:19:53.219 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:53.220 [Task submitter] INFO  nextflow.Session - [51/6101a5] Submitted process > SplitCsvPure (exp_index_3)
+Jul-11 20:19:53.271 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:53.272 [Task submitter] INFO  nextflow.Session - [d1/dcb4c8] Submitted process > SplitCsvPure (exp_index_1b)
+Jul-11 20:19:53.296 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:53.300 [Task submitter] INFO  nextflow.Session - [4f/0600b2] Submitted process > SplitCsvPure (exp_index_2a)
+Jul-11 20:19:53.313 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:53.314 [Task submitter] INFO  nextflow.Session - [43/2f979e] Submitted process > SplitCsvPure (exp_index_2b)
+Jul-11 20:19:53.329 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:53.329 [Task submitter] INFO  nextflow.Session - [e7/69f1c2] Submitted process > SplitCsvPure (exp_index_1a)
+Jul-11 20:19:54.139 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: SplitCsvPure (exp_index_3); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/51/6101a53af9f41f8c0e6fcf259875b0]
+Jul-11 20:19:55.717 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: SplitCsvPure (exp_index_2b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/43/2f979e1e5ac81a36af969e2d9f9b21]
+Jul-11 20:19:55.742 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: SplitCsvPure (exp_index_1b); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/d1/dcb4c85712c81671226176ffdc3a4e]
+Jul-11 20:19:56.806 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: SplitCsvPure (exp_index_2a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/4f/0600b2f7e55923d97399363f0f388a]
+Jul-11 20:19:56.925 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: SplitCsvPure (exp_index_1a); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/e7/69f1c2c1e93f48e8678679fac90650]
+Jul-11 20:19:56.958 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-11 20:19:56.958 [Task submitter] INFO  nextflow.Session - [48/33bb09] Submitted process > RecombineCsv (recombine)
+Jul-11 20:19:57.187 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: RecombineCsv (recombine); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/48/33bb091789d1b3c4a1659d7b567489]
+Jul-11 20:20:33.907 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: GenerateFigures (1); status: COMPLETED; exit: 0; error: -; workDir: /kyukon/scratch/gent/491/vsc49179/nextflow-project/modules/work/5e/69fc8be3e777681dae2c092aa688af]
+Jul-11 20:20:33.913 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-11 20:20:34.007 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-11 20:20:34.007 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-11 20:20:34.010 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-11 20:20:34.010 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-11 20:20:34.017 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=10; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=53.8s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=6; peakCpus=6; peakMemory=0; ]
+Jul-11 20:20:34.082 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-11 20:20:34.092 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-11 20:20:34.093 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
