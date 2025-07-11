@@ -1,4 +1,4 @@
-# 🧬 Nextflow Project – VIB/UGent Microcredential
+# Nextflow Project – VIB/UGent Microcredential
 
 This repository contains a modular Nextflow pipeline developed as part of the **VIB/UGent Reproducible Analysis Microcredential**.  
 It performs data extraction, analysis, and visualization using containerized and reproducible tools.
@@ -37,11 +37,11 @@ It performs data extraction, analysis, and visualization using containerized and
 
 ---
 
-## 🧪 Requirements Met
+## Requirements Met
  
 - ✅ ≥3 custom modules  
 - ✅ Custom + external tools  
--     No manual setup needed  
+- ❌  No manual setup needed  
 - ✅ GitHub hosted  
 - ✅ Structured output  
 - ✅ Multiple Nextflow operators used (`collect`, `flatMap`, `view`, etc.)
