@@ -58,6 +58,19 @@ export APPTAINER_TMPDIR=${VSC_SCRATCH}/.apptainer_tmp
 nextflow run main.nf
 ```
 
+# ❌  Automatic setup problems
+
+Built the image of my environment used with conda:
+
+`apptainer build r-plotting.sif r_plotting.def`
+
+Succesfully:
+
+```bash
+apptainer exec r-plotting.sif Rscript --version
+Rscript (R) version 4.3.0 (2023-04-21)
+```
+
 # Additional steps to be able to run for the plot
 
 Modify nextflow config to enable conda, then:

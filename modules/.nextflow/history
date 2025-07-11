@@ -1,0 +1,7 @@
+2025-07-11 14:01:23	2.8s	shrivelled_yalow	ERR	97869168506b2ffc56f84841025d8470	0b6603de-d063-4487-86a9-245db9025cfd	nextflow run main.nf
+2025-07-11 14:04:14	2.9s	clever_hodgkin	ERR	97869168506b2ffc56f84841025d8470	5bca440a-e1d3-4194-8c84-b2ec4027c004	nextflow run main.nf
+2025-07-11 14:28:01	2.7s	fabulous_shockley	ERR	97869168506b2ffc56f84841025d8470	3269bcce-7f3c-4ce6-bb98-c3b3d0a77795	nextflow run main.nf
+2025-07-11 14:30:33	2.8s	lethal_ptolemy	ERR	97869168506b2ffc56f84841025d8470	f751a16e-7175-4640-b87c-231bc762bbe7	nextflow run main.nf
+2025-07-11 14:30:53	2.9s	extravagant_hamilton	ERR	97869168506b2ffc56f84841025d8470	d745f08b-0bae-4fad-a6b3-3dc29e3c4b41	nextflow run main.nf
+2025-07-11 14:31:17	44.7s	distracted_leakey	OK	97869168506b2ffc56f84841025d8470	ba991e8f-b047-4380-999b-1ce65531f97c	nextflow run main.nf
+2025-07-11 14:34:21	41.2s	naughty_hypatia	OK	97869168506b2ffc56f84841025d8470	263d9490-c319-4b5e-954f-47dd610eafe8	nextflow run main.nf
