@@ -71,6 +71,9 @@ apptainer exec r-plotting.sif Rscript --version
 Rscript (R) version 4.3.0 (2023-04-21)
 ```
 
+But unfortunately Rscript command is never found no matter the Script modification in plot.nf.
+So for now, only works using conda.
+
 # Additional steps to be able to run for the plot
 
 Modify nextflow config to enable conda, then:
