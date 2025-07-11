@@ -60,9 +60,13 @@ nextflow run main.nf
 
 # Additional steps to be able to run for the plot
 
+Modify nextflow config to enable conda, then:
+
 `module load Anaconda3/2024.06-1`
 
 `conda activate r-plotting`
+
+
 
 
 
