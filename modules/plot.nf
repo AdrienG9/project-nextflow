@@ -8,8 +8,9 @@ params.rscript = "script/plot_figures.R"
 params.plot_dir = "output/plots"
 
 process GenerateFigures {
-    container '/scratch/gent/491/vsc49179/nextflow-project/modules/envs/r-plotting.sif'
-    //conda "envs/r_plotting.yml" 
+    //container 'docker://rocker/r-base:4.3.2'
+    //container '/scratch/gent/491/vsc49179/nextflow-project/modules/envs/r-plotting.sif'
+    conda "envs/r_plotting.yml" 
 
 
     publishDir "${params.plot_dir}", mode: 'copy'

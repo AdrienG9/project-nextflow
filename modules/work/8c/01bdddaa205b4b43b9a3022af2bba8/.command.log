@@ -1,0 +1,132 @@
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Warning messages:
+1: package ‘tidyverse’ was built under R version 4.3.3 
+2: package ‘ggplot2’ was built under R version 4.3.3 
+3: package ‘tibble’ was built under R version 4.3.3 
+4: package ‘tidyr’ was built under R version 4.3.3 
+5: package ‘readr’ was built under R version 4.3.3 
+6: package ‘purrr’ was built under R version 4.3.3 
+7: package ‘dplyr’ was built under R version 4.3.3 
+8: package ‘stringr’ was built under R version 4.3.3 
+9: package ‘forcats’ was built under R version 4.3.3 
+10: package ‘lubridate’ was built under R version 4.3.3 
+Warning message:
+package ‘patchwork’ was built under R version 4.3.3 
+Loading required package: lattice
+Loading required package: plyr
+------------------------------------------------------------------------------
+You have loaded plyr after dplyr - this is likely to cause problems.
+If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+library(plyr); library(dplyr)
+------------------------------------------------------------------------------
+
+Attaching package: ‘plyr’
+
+The following objects are masked from ‘package:dplyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following object is masked from ‘package:purrr’:
+
+    compact
+
+Warning messages:
+1: package ‘Rmisc’ was built under R version 4.3.3 
+2: package ‘lattice’ was built under R version 4.3.3 
+3: package ‘plyr’ was built under R version 4.3.3 
+Loading required package: lme4
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Warning messages:
+1: package ‘lmerTest’ was built under R version 4.3.3 
+2: package ‘lme4’ was built under R version 4.3.3 
+3: package ‘Matrix’ was built under R version 4.3.3 
+Warning messages:
+1: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information. 
+2: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+3: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+4: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+null device 
+          1 
+Warning messages:
+1: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+2: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+3: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+null device 
+          1 
+Warning messages:
+1: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+2: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+3: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+null device 
+          1 
+Warning messages:
+1: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+2: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+3: Computation failed in `stat_summary()`.
+Caused by error in `fun.data()`:
+! The package "Hmisc" is required. 
+null device 
+          1 
+boundary (singular) fit: see help('isSingular')
+There were 19 warnings (use warnings() to see them)
+Warning message:
+Removed 1 row containing missing values or values outside the scale range
+(`geom_col()`). 
+null device 
+          1 
+`summarise()` has grouped output by 'exp_index', 'condition', 'scenario'. You
+can override using the `.groups` argument.
+null device 
+          1 
